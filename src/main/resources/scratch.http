@@ -1,0 +1,53 @@
+### POST user in db
+POST http://localhost:8080/addUser
+Content-Type: application/json
+Accept: application/json
+
+{
+  "firstName": "Jake",
+  "lastName": "Sparou",
+  "email": "homyak@gmail.com"
+}
+
+
+
+### GET find user by id with a header
+GET http://localhost:8080/getUser/1
+Accept: application/json
+
+
+
+### GET find user by id with parameter
+GET http://localhost:8080/getUser?id=1
+Accept: application/json
+
+
+
+### PUT changing by id
+PUT http://localhost:8080/changing
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": 5,
+  "user": {
+    "firstName": "pasha",
+    "lastName": "pashtet",
+    "email": "pashaPashtet@mail.com"
+  }
+}
+
+
+
+### DELETE user by id
+DELETE http://localhost:8080/delete?id=1
+
+
+
+###GET all users list
+GET http://localhost:8080/allUsers
+Accept: application/json
+
+
+
+
